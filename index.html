@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>A site's navigational system</title>
+    <style>
+        body, html {
+            font-family: "Playfair Display", serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            color: #000;
+            text-decoration: none;
+            overflow: hidden;
+        }
+
+        .f1{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+        }
+
+        .f2{
+            position: absolute;
+            right: 0;
+        }
+
+        a{
+            color: #000;
+            width: 200;
+        }
+        h2{
+            margin-left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .hero {
+            height: 100vh;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: url("https://plus.unsplash.com/premium_photo-1705342249387-9463fddd39a3?q=80&w=1571&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        }
+
+        /* Navigation bar styles */
+        nav {
+            /* margin-bottom: 20px; */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        /* Highlight the current page link */
+        nav ul li.current-page a {
+            /* font-weight: bold;
+            color: red; */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            /* color: blue; */
+        }
+
+        /* Table styles */
+        table {
+            width: 40%;
+            border-collapse: collapse;
+            margin: 5% auto;
+        }
+
+        table, th, td {
+            border: 1px solid #000;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 15px;
+        }
+
+        /* Image link styles */
+        .favorite-pages {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .favorite-pages img {
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class = "hero">
+    <nav>
+        <ul>
+            <li class="current-page"><a href="index.html">Home</a></li>
+            <li class="f1"><a href="future1.html">Future Page 1</a></li>
+            <li class="f2"><a href="future2.html">Future Page 2</a></li>
+        </ul>
+    </nav>
+
+    <!-- Table of Courses -->
+    <table>
+        <h2>Courses I'm Taking This Semester</h2>
+        <tr>
+            <th>Course Name</th>
+            <th>Professor</th>
+            <th>Schedule</th>
+        </tr>
+        <tr>
+            <td>Web Systems & Development</td>
+            <td>Prof. Janvan</td>
+            <td>Mon 6:00 PM - 9:00PM</td>
+        </tr>
+        <tr>
+            <td>Mobile Computing</td>
+            <td>Prof. Chege</td>
+            <td>Tue 6:00 PM - 9:00PM</td>
+        </tr>
+        <tr>
+            <td>Research Methods</td>
+            <td>Prof. Racheal</td>
+            <td>Thu 06:00 PM - 9:00 PM</td>
+        </tr>
+    </table>
+    <!-- Favorite Pages with Graphic Links -->
+    <h2>Visit My Favorite Pages</h2>
+    <div class="favorite-pages">
+        <a href="https://www.youtube.com">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/YouTube-Logo.png" alt="Favorite Page 1">
+        </a>
+        <a href="https://mail.google.com/mail/u/0/#inbox">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo.png" alt="Favorite Page 2">
+        </a>
+        <a href="https://www.canva.com/">
+            <img src="https://logos-world.net/wp-content/uploads/2020/02/Canva-Logo.png" alt="Favorite Page 3">
+        </a>
+</div>
+    </div>
+
+</body>
+</html>
